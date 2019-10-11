@@ -55,11 +55,6 @@ public class deathPlaform : MonoBehaviour
      
     }
 
-    private void Death()
-    {
-        sound.PlaySound("die1");
-    }
-
 
     private void OnCollisionEnter2D(Collision2D col)
     {
@@ -76,8 +71,7 @@ public class deathPlaform : MonoBehaviour
             else
             {
                 transform.Translate(0, 0, 0);
-                Death();
-                Debug.Log("dead");
+                sound.PlaySound("die1");
 
             }
         }
