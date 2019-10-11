@@ -14,8 +14,6 @@ public class TakePoint : MonoBehaviour
             SaveManager.coins += 1;
             deathPlaform.isMove = true;
             Destroy(gameObject);
-           // sound.PlaySound("pickup");
-          //  SaveManager.UpdateCoins();
         }
 
     }

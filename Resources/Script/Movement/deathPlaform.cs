@@ -5,6 +5,7 @@ using UnityEngine;
 public class deathPlaform : MonoBehaviour
 
 {
+    int b = 0;
     public float speedMoving;
     public static bool isDead = false;
     public static bool isMove = false;
@@ -32,15 +33,13 @@ public class deathPlaform : MonoBehaviour
             if (Pause.paused == true)
             {
                 transform.Translate(0, speedMoving * Time.deltaTime, 0);
-                Debug.Log(speedMoving.ToString());
             }
         
             else
             {
                 speedMoving += 0.0016f;
                 transform.Translate(0, speedMoving * Time.deltaTime, 0);
-                Debug.Log(speedMoving.ToString());
-               
+            
         }
 
       //  if (onSpeed == true)
@@ -56,27 +55,33 @@ public class deathPlaform : MonoBehaviour
      
     }
 
+    private void Death()
+    {
+        sound.PlaySound("die1");
+    }
+
+
     private void OnCollisionEnter2D(Collision2D col)
     {
         if (col.gameObject.tag == "Player")
         {
-            transform.Translate(0, 0, 0);
-            Death();
-            Debug.Log("dead");
+            b += 1;
+            Debug.Log(b);
+            if (b != 4)
+            
+            {
+                transform.Translate(0, -4, 0);
+
+            }
+            else
+            {
+                transform.Translate(0, 0, 0);
+                Death();
+                Debug.Log("dead");
+
+            }
         }
     }
-    private void Death()
-    {
-      //  isDead = true;
-        sound.PlaySound("die1");
-       // isMove = true;
-    }
 
-   // private void Speed()
-  //  {
-       // speedMoving +=0.02f;
-  //  }
-
-  
 
 }

@@ -22,15 +22,6 @@ public class PlayerMovement : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
     }
 
-    void Update()
-
-    {
-       // if (isDead == true)
-       // {
-         //   return;
-      //  }
-
-    }
 
     void FixedUpdate()
     {

@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class PlayerCollisionManager : MonoBehaviour
 {
+    int a = 0;
     PlayerMovement player;
     public GameObject restarBtn;
+    public GameObject blackScreen;
+    public GameObject gameOver;
     RaycastHit2D hit;
-    [SerializeField] LayerMask obstacleMask;
     [SerializeField] float timeAfterKills;
 
 
@@ -26,23 +28,34 @@ public class PlayerCollisionManager : MonoBehaviour
                 case Direction.UP:
                     Debug.Log(player.movingDir);
                     deathPlaform.isMove = false;
+                    Time.timeScale = 0;
                     restarBtn.SetActive(true);
+                    blackScreen.SetActive(true);
+                    gameOver.SetActive(false);
                     break;
                 case Direction.DOWN:
                     Debug.Log(player.movingDir);
                     deathPlaform.isMove = false;
+                    Time.timeScale = 0;
                     restarBtn.SetActive(true);
+                    blackScreen.SetActive(true);
+                    gameOver.SetActive(false);
                     break;
                 case Direction.RIGHT:
                     Debug.Log(player.movingDir);
                     deathPlaform.isMove = false;
+                    Time.timeScale = 0;
                     restarBtn.SetActive(true);
+                    blackScreen.SetActive(true);
+                    gameOver.SetActive(false);
                     break;
                 case Direction.LEFT:
                     Debug.Log(player.movingDir);
                     deathPlaform.isMove = false;
+                    Time.timeScale = 0;
                     restarBtn.SetActive(true);
-
+                    blackScreen.SetActive(true);
+                    gameOver.SetActive(false);
                     break;
                     
             }
@@ -51,9 +64,23 @@ public class PlayerCollisionManager : MonoBehaviour
 
             if (hit != null)
             {
-                Destroy(GameObject.Find("Player"));
-                restarBtn.SetActive(true);
-                sound.PlaySound("die1");
+                a+=1;
+                Debug.Log(a);
+                if (a != 4)
+
+                {
+                    restarBtn.SetActive(true);
+                    Time.timeScale = 0;
+                    transform.Translate(0,0,0);
+                }
+                else
+                {
+
+                    Destroy(GameObject.Find("Player"));
+                    sound.PlaySound("die1");
+                    restarBtn.SetActive(false);
+                    gameOver.SetActive(true);
+                }
 
             }
         }
@@ -65,10 +92,9 @@ public class PlayerCollisionManager : MonoBehaviour
             col.collider.GetComponent<SpikeAfterTime>().startCountDown();
 
         }
-
-     
-        
-}
+       
+    
+    }
 
 }
 

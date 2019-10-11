@@ -6,25 +6,18 @@ using UnityEngine;
 public class Restart : MonoBehaviour
 
 {
+    public GameObject playPanel;
+    public GameObject blackScreen;
     private Text text;
     void Start()
     {
         text = GetComponent<Text>();
-      //  deathPlaform.isMove = false;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-      
     }
 
    public void RestartLevel()
     {
 
         Application.LoadLevel(Application.loadedLevel);
-      //  if ((SaveManager.score) < SaveManager.coins)
-         //   text.text = ((int)SaveManager.score).ToString();
             SaveManager.coins = 0;
            deathPlaform.isMove = false;
 
@@ -33,7 +26,14 @@ public class Restart : MonoBehaviour
 
     }
 
-   
+    public void Play()
+    {
+        Time.timeScale = 1f;
+        deathPlaform.isMove = false;
+        playPanel.SetActive(false);
+        blackScreen.SetActive(false);
+        transform.Translate(-1, -1, 0);
+    }
 
 
 }

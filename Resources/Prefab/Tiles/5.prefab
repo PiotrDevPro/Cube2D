@@ -33012,6 +33012,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: DeathWall (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 8185278091476149916, guid: b7760c84e2f68664896f4645a660726e,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 8185278091476149890, guid: b7760c84e2f68664896f4645a660726e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -33811,6 +33816,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: DeathWall (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185278091476149916, guid: b7760c84e2f68664896f4645a660726e,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 8185278091476149890, guid: b7760c84e2f68664896f4645a660726e,
         type: 3}
@@ -36507,6 +36517,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 450.076
       objectReference: {fileID: 0}
+    - target: {fileID: 590834354732826523, guid: b7760c84e2f68664896f4645a660726e,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 0.84
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b7760c84e2f68664896f4645a660726e, type: 3}
 --- !u!4 &1705136020666187991 stripped
@@ -37723,6 +37738,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: DeathWall (23)
       objectReference: {fileID: 0}
+    - target: {fileID: 8185278091476149916, guid: b7760c84e2f68664896f4645a660726e,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 8185278091476149890, guid: b7760c84e2f68664896f4645a660726e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -38767,6 +38787,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 590834354732826523, guid: b7760c84e2f68664896f4645a660726e,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 0.79
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b7760c84e2f68664896f4645a660726e, type: 3}
@@ -40449,6 +40474,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: DeathWall (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185278091476149916, guid: b7760c84e2f68664896f4645a660726e,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 8185278091476149890, guid: b7760c84e2f68664896f4645a660726e,
         type: 3}

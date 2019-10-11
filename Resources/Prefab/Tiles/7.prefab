@@ -10192,6 +10192,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -90
       objectReference: {fileID: 0}
+    - target: {fileID: 590834354732826523, guid: b7760c84e2f68664896f4645a660726e,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 0.82
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b7760c84e2f68664896f4645a660726e, type: 3}
 --- !u!4 &8912344269833754770 stripped
@@ -11699,6 +11704,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: DeathWall (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185278091476149916, guid: b7760c84e2f68664896f4645a660726e,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 8185278091476149890, guid: b7760c84e2f68664896f4645a660726e,
         type: 3}
@@ -15757,6 +15767,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: DeathWall (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185278091476149916, guid: b7760c84e2f68664896f4645a660726e,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 8185278091476149890, guid: b7760c84e2f68664896f4645a660726e,
         type: 3}
@@ -55853,6 +55868,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: DeathWall (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 8185278091476149916, guid: b7760c84e2f68664896f4645a660726e,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 8185278091476149890, guid: b7760c84e2f68664896f4645a660726e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -57030,6 +57050,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 3.400004
+      objectReference: {fileID: 0}
+    - target: {fileID: 590834354732826523, guid: b7760c84e2f68664896f4645a660726e,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: -0.12
+      objectReference: {fileID: 0}
+    - target: {fileID: 590834354732826523, guid: b7760c84e2f68664896f4645a660726e,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 0.52
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b7760c84e2f68664896f4645a660726e, type: 3}

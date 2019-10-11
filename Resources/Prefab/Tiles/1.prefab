@@ -18258,6 +18258,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: DeathWall (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 8185278091476149916, guid: b7760c84e2f68664896f4645a660726e,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 8185278091476149890, guid: b7760c84e2f68664896f4645a660726e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -19247,6 +19252,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: DeathWall (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185278091476149916, guid: b7760c84e2f68664896f4645a660726e,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 8185278091476149890, guid: b7760c84e2f68664896f4645a660726e,
         type: 3}
@@ -22029,6 +22039,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 180
       objectReference: {fileID: 0}
+    - target: {fileID: 590834354732826523, guid: b7760c84e2f68664896f4645a660726e,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 0.81
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b7760c84e2f68664896f4645a660726e, type: 3}
 --- !u!4 &8520979934605932003 stripped
@@ -23367,6 +23382,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: DeathWall (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185278091476149916, guid: b7760c84e2f68664896f4645a660726e,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 8185278091476149890, guid: b7760c84e2f68664896f4645a660726e,
         type: 3}
@@ -25414,6 +25434,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 590834354732826523, guid: b7760c84e2f68664896f4645a660726e,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 590834354732826523, guid: b7760c84e2f68664896f4645a660726e,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 0.75
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b7760c84e2f68664896f4645a660726e, type: 3}
@@ -27800,6 +27830,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: DeathWall (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 8185278091476149916, guid: b7760c84e2f68664896f4645a660726e,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 8185278091476149890, guid: b7760c84e2f68664896f4645a660726e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -29310,6 +29345,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8917578987418749867, guid: 4a735c88d8372e64d829db71206d45f6,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 7346738566144660735, guid: 4a735c88d8372e64d829db71206d45f6,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 7346738566144660735, guid: 4a735c88d8372e64d829db71206d45f6,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 0.63
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4a735c88d8372e64d829db71206d45f6, type: 3}
@@ -32667,6 +32717,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: DeathWall (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 8185278091476149916, guid: b7760c84e2f68664896f4645a660726e,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 8185278091476149890, guid: b7760c84e2f68664896f4645a660726e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -35018,6 +35073,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5910565924263860792, guid: b20502a561f9f134bbfdc9fd5bb55c45,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 1144066956006046935, guid: b20502a561f9f134bbfdc9fd5bb55c45,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: -0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 1144066956006046935, guid: b20502a561f9f134bbfdc9fd5bb55c45,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 0.55
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b20502a561f9f134bbfdc9fd5bb55c45, type: 3}
 --- !u!4 &1635606067596331358 stripped
@@ -35122,6 +35192,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: DeathWall (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185278091476149916, guid: b7760c84e2f68664896f4645a660726e,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 8185278091476149890, guid: b7760c84e2f68664896f4645a660726e,
         type: 3}
@@ -38448,6 +38523,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 590834354732826523, guid: b7760c84e2f68664896f4645a660726e,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: -0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 590834354732826523, guid: b7760c84e2f68664896f4645a660726e,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 1.15
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b7760c84e2f68664896f4645a660726e, type: 3}
 --- !u!4 &5383063472644408373 stripped
@@ -38627,6 +38712,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: DeathWall (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185278091476149916, guid: b7760c84e2f68664896f4645a660726e,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 8185278091476149890, guid: b7760c84e2f68664896f4645a660726e,
         type: 3}
@@ -45327,6 +45417,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 180
       objectReference: {fileID: 0}
+    - target: {fileID: 590834354732826523, guid: b7760c84e2f68664896f4645a660726e,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: 0.07
+      objectReference: {fileID: 0}
+    - target: {fileID: 590834354732826523, guid: b7760c84e2f68664896f4645a660726e,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 1.08
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b7760c84e2f68664896f4645a660726e, type: 3}
 --- !u!4 &1667325443203657165 stripped
@@ -46317,6 +46417,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: DeathWall (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 8185278091476149916, guid: b7760c84e2f68664896f4645a660726e,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 8185278091476149890, guid: b7760c84e2f68664896f4645a660726e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -47007,6 +47112,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: DeathWall (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185278091476149916, guid: b7760c84e2f68664896f4645a660726e,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 8185278091476149890, guid: b7760c84e2f68664896f4645a660726e,
         type: 3}
@@ -48128,6 +48238,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: DeathWall (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185278091476149916, guid: b7760c84e2f68664896f4645a660726e,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 8185278091476149890, guid: b7760c84e2f68664896f4645a660726e,
         type: 3}
