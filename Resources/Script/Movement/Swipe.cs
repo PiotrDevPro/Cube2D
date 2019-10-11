@@ -91,23 +91,33 @@ public class Swipe : MonoBehaviour
                 {
                     // Left or right
                     if (x < 0)
+                    {
 
-                          player_move.movingDir = Direction.LEFT;
-                     //   swipeLeft = true;
+                        player_move.movingDir = Direction.LEFT;
+                        deathPlaform.isMove = true;
+                         //   swipeLeft = true;
+                    }
+
                     else
-                          player_move.movingDir = Direction.RIGHT;
-                     //   swipeRight = true;
+                        player_move.movingDir = Direction.RIGHT;
+                        deathPlaform.isMove = true;
+                         //   swipeRight = true;
 
                 }
                 else
                 {
                     // Up or down
-                    if (y < 0)
-                         player_move.movingDir = Direction.DOWN;
-                     //   swipeDown = true;
+                    if (y < 0) {
+
+                          player_move.movingDir = Direction.DOWN;
+                          deathPlaform.isMove = true;
+                        //   swipeDown = true;
+                    }
+
                     else
                           player_move.movingDir = Direction.UP;
-                     //   swipeUp = true;
+                          deathPlaform.isMove = true;
+                        //   swipeUp = true;
                 }
     
             }

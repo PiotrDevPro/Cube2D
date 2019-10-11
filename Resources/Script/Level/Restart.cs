@@ -21,18 +21,26 @@ public class Restart : MonoBehaviour
             SaveManager.coins = 0;
            deathPlaform.isMove = false;
 
-
-
-
     }
 
     public void Play()
     {
-        Time.timeScale = 1f;
-        deathPlaform.isMove = false;
-        playPanel.SetActive(false);
-        blackScreen.SetActive(false);
-        transform.Translate(-1, -1, 0);
+        
+        if (SaveManager.star > 100)
+        {
+            Time.timeScale = 1f;
+            deathPlaform.isMove = false;
+            playPanel.SetActive(false);
+            blackScreen.SetActive(false);
+            SaveManager.star -= 100;
+            SaveManager.UpdateStars();
+        }
+        else {
+
+            Debug.Log("Need More Gold!!!");
+            return;
+        }
+        
     }
 
 

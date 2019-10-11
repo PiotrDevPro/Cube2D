@@ -10,7 +10,6 @@ public class TakeCoin : MonoBehaviour
         {
             SaveManager.star += 1;
             SaveManager.UpdateStars();
-            deathPlaform.isMove = true;
             sound.PlaySound("pickup");
             Destroy(gameObject);
 

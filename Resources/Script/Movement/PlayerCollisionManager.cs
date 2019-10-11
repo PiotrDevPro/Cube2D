@@ -32,6 +32,7 @@ public class PlayerCollisionManager : MonoBehaviour
                     restarBtn.SetActive(true);
                     blackScreen.SetActive(true);
                     gameOver.SetActive(false);
+                    transform.Translate(-1, 0, 0);
                     break;
                 case Direction.DOWN:
                     Debug.Log(player.movingDir);
@@ -40,6 +41,7 @@ public class PlayerCollisionManager : MonoBehaviour
                     restarBtn.SetActive(true);
                     blackScreen.SetActive(true);
                     gameOver.SetActive(false);
+                    transform.Translate(0, 1, 0);
                     break;
                 case Direction.RIGHT:
                     Debug.Log(player.movingDir);
@@ -48,6 +50,7 @@ public class PlayerCollisionManager : MonoBehaviour
                     restarBtn.SetActive(true);
                     blackScreen.SetActive(true);
                     gameOver.SetActive(false);
+                    transform.Translate(0, 0, 0);
                     break;
                 case Direction.LEFT:
                     Debug.Log(player.movingDir);
@@ -56,6 +59,7 @@ public class PlayerCollisionManager : MonoBehaviour
                     restarBtn.SetActive(true);
                     blackScreen.SetActive(true);
                     gameOver.SetActive(false);
+                    transform.Translate(0, 0, 0);
                     break;
                     
             }
@@ -71,7 +75,7 @@ public class PlayerCollisionManager : MonoBehaviour
                 {
                     restarBtn.SetActive(true);
                     Time.timeScale = 0;
-                    transform.Translate(0,0,0);
+                    
                 }
                 else
                 {

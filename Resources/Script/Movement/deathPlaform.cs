@@ -39,6 +39,7 @@ public class deathPlaform : MonoBehaviour
             {
                 speedMoving += 0.0016f;
                 transform.Translate(0, speedMoving * Time.deltaTime, 0);
+                Debug.Log(speedMoving);
             
         }
 
@@ -65,7 +66,7 @@ public class deathPlaform : MonoBehaviour
             if (b != 4)
             
             {
-                transform.Translate(0, -4, 0);
+                transform.Translate(0, -3, 0);
 
             }
             else
