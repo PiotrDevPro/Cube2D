@@ -15,8 +15,6 @@ public class PlayerMovement : MonoBehaviour
     Rigidbody2D rb;
     public Direction movingDir;
 
-  //  private bool isDead = false;
-
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -28,7 +26,6 @@ public class PlayerMovement : MonoBehaviour
         switch (movingDir)
         {
             case Direction.UP:
-
                 rb.velocity = new Vector2(0, speed * Time.fixedDeltaTime);
                 rb.constraints = RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezeRotation;
                 break;
@@ -43,7 +40,6 @@ public class PlayerMovement : MonoBehaviour
             case Direction.LEFT:
                 rb.velocity = new Vector2(-speed * Time.fixedDeltaTime, 0);
                 rb.constraints = RigidbodyConstraints2D.FreezePositionY | RigidbodyConstraints2D.FreezeRotation;
-
                 break;
         }
     }

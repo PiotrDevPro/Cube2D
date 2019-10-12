@@ -16,7 +16,6 @@ public class ShowCoins : MonoBehaviour
     {
         //string[] temp = text.text.Split(':');
         text.text = ((int)SaveManager.coins).ToString();
-
       //  temp[0] + ":"
     }
 }

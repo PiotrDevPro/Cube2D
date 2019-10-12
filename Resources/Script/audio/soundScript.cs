@@ -10,10 +10,11 @@ public class soundScript : MonoBehaviour
     public Sprite musicOnSprite;
     public Sprite musicOffSprite;
 
-    void Start()
+    void Awake()
     {
         music = GameObject.FindObjectOfType<ToggleMusicBtn>();
         UpdateIcon();
+
     }
 
     public void PauseMusic()
@@ -26,7 +27,7 @@ public class soundScript : MonoBehaviour
     {
         if (PlayerPrefs.GetInt("Muted",0) == 0)
         {
-            AudioListener.volume = 1;
+            AudioListener.volume = 0.15f;
             toggleButton.GetComponent<Image>().sprite = musicOnSprite;   
         }
         else

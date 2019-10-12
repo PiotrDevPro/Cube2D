@@ -5,9 +5,6 @@ using UnityEngine;
 
 public class ToggleMusicBtn : MonoBehaviour
 {
-  //  public Toggle tgl_btn;
-  //  public Text tgl_txt;
-  //  private AudioSource _audio_toggle;
     static ToggleMusicBtn instance = null;
 
     private void Awake()

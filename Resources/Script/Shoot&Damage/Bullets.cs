@@ -10,12 +10,7 @@ public class Bullets : MonoBehaviour
         if (col.collider.tag == "Player")
         {
 
-            Destroy(col.gameObject);
             Destroy(this.gameObject);
-            //   }
-            //  else
-
-            //  Destroy(gameObject, 10f);
 
 
         }

@@ -26,7 +26,6 @@ public class SaveManager : MonoBehaviour
     {
         PlayerPrefs.SetInt("Coins", coins);
         coins = PlayerPrefs.GetInt("Coins");
-        //PlayerPrefs.Save();
     }
 
     public static void UpdateStars()
@@ -42,6 +41,5 @@ public class SaveManager : MonoBehaviour
         score = PlayerPrefs.GetInt("Highscore");
         PlayerPrefs.Save();
     }
-
 
 }

@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 7301958930911558013}
   - component: {fileID: 1661989643941744654}
   - component: {fileID: 165061348}
-  - component: {fileID: 165061349}
+  - component: {fileID: 5185018051595546545}
   m_Layer: 9
   m_Name: Player
   m_TagString: Player
@@ -144,13 +144,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 035c31a0ffbf04446ae26e82814373ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2300
+  speed: 2900
   movingDir: 0
-  movingHorizontally: 0
-  canCheck: 1
-  obstacleMask:
-    serializedVersion: 2
-    m_Bits: 256
 --- !u!114 &1661989643941744654
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -164,9 +159,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   restarBtn: {fileID: 0}
-  obstacleMask:
-    serializedVersion: 2
-    m_Bits: 0
+  blackScreen: {fileID: 0}
+  gameOver: {fileID: 0}
+  healh_tx: {fileID: 0}
   timeAfterKills: 0
 --- !u!96 &165061348
 TrailRenderer:
@@ -206,7 +201,7 @@ TrailRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Time: 0.15
+  m_Time: 0.2
   m_Parameters:
     serializedVersion: 3
     widthMultiplier: 1
@@ -281,15 +276,15 @@ TrailRenderer:
   m_MinVertexDistance: 1
   m_Autodestruct: 0
   m_Emitting: 1
---- !u!114 &165061349
+--- !u!114 &5185018051595546545
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6367126590840256326}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 30497427d03ca824dbed6cddfe309284, type: 3}
+  m_Script: {fileID: 11500000, guid: df3971716dedc1b4ab29963a0c353780, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

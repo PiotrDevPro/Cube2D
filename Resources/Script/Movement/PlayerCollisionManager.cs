@@ -1,11 +1,14 @@
 ﻿   using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.UI;
 using UnityEngine;
+
 
 public class PlayerCollisionManager : MonoBehaviour
 {
-    int a = 0;
+    public static int a = 4;
     PlayerMovement player;
+    private TrailRenderer _player_trail;
     public GameObject restarBtn;
     public GameObject blackScreen;
     public GameObject gameOver;
@@ -13,9 +16,15 @@ public class PlayerCollisionManager : MonoBehaviour
     [SerializeField] float timeAfterKills;
 
 
-    void Start()
+    void Awake()
     {
         player = GetComponent<PlayerMovement>();
+        _player_trail = GetComponent<TrailRenderer>();
+    }
+
+    private void Start()
+    {
+        _player_trail.enabled = true;
     }
 
     void OnCollisionEnter2D(Collision2D col)
@@ -31,8 +40,8 @@ public class PlayerCollisionManager : MonoBehaviour
                     Time.timeScale = 0;
                     restarBtn.SetActive(true);
                     blackScreen.SetActive(true);
-                    gameOver.SetActive(false);
-                    transform.Translate(-1, 0, 0);
+                    _player_trail.enabled = false;
+                    //    Destroy(GameObject.Find("Player"));
                     break;
                 case Direction.DOWN:
                     Debug.Log(player.movingDir);
@@ -40,8 +49,7 @@ public class PlayerCollisionManager : MonoBehaviour
                     Time.timeScale = 0;
                     restarBtn.SetActive(true);
                     blackScreen.SetActive(true);
-                    gameOver.SetActive(false);
-                    transform.Translate(0, 1, 0);
+                    _player_trail.enabled = false;
                     break;
                 case Direction.RIGHT:
                     Debug.Log(player.movingDir);
@@ -49,8 +57,7 @@ public class PlayerCollisionManager : MonoBehaviour
                     Time.timeScale = 0;
                     restarBtn.SetActive(true);
                     blackScreen.SetActive(true);
-                    gameOver.SetActive(false);
-                    transform.Translate(0, 0, 0);
+                    _player_trail.enabled = false;
                     break;
                 case Direction.LEFT:
                     Debug.Log(player.movingDir);
@@ -58,32 +65,31 @@ public class PlayerCollisionManager : MonoBehaviour
                     Time.timeScale = 0;
                     restarBtn.SetActive(true);
                     blackScreen.SetActive(true);
-                    gameOver.SetActive(false);
-                    transform.Translate(0, 0, 0);
+                    _player_trail.enabled = false;
                     break;
-                    
+                  
             }
-
-        
+     
 
             if (hit != null)
             {
-                a+=1;
+                a-=1;
                 Debug.Log(a);
-                if (a != 4)
+                if (a != 0)
 
                 {
                     restarBtn.SetActive(true);
-                    Time.timeScale = 0;
-                    
+                    sound.PlaySound("die1");
+
                 }
                 else
                 {
 
-                    Destroy(GameObject.Find("Player"));
+                    
                     sound.PlaySound("die1");
                     restarBtn.SetActive(false);
                     gameOver.SetActive(true);
+                    Destroy(GameObject.Find("Player"));
                 }
 
             }
@@ -97,9 +103,8 @@ public class PlayerCollisionManager : MonoBehaviour
 
         }
        
-    
     }
 
-}
+ }
 
 

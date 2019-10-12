@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.UI;
 using UnityEngine;
 
 public class deathPlaform : MonoBehaviour
@@ -9,11 +10,12 @@ public class deathPlaform : MonoBehaviour
     public float speedMoving;
     public static bool isDead = false;
     public static bool isMove = false;
-   // public static bool onSpeed = false;
+
 
     void Start()
-    { 
-       if (isMove == true)
+    {
+
+        if (isMove == true)
         {
             speedMoving = 0f;
         }
@@ -37,20 +39,9 @@ public class deathPlaform : MonoBehaviour
         
             else
             {
-                speedMoving += 0.0016f;
-                transform.Translate(0, speedMoving * Time.deltaTime, 0);
-                Debug.Log(speedMoving);
-            
-        }
-
-      //  if (onSpeed == true)
-           // {
-          //    Speed();
-         // Debug.Log(speedMoving.ToString());
-        //}
-       // else if (onSpeed == false)
-      //  {
-         //     speedMoving = 4f;
+                speedMoving += 0.0011f;
+                transform.Translate(0, speedMoving * Time.deltaTime, 0); 
+            }
             
         }
      
@@ -64,10 +55,12 @@ public class deathPlaform : MonoBehaviour
             b += 1;
             Debug.Log(b);
             if (b != 4)
-            
-            {
-                transform.Translate(0, -3, 0);
 
+            {
+                transform.Translate(0, -9, 0);
+                sound.PlaySound("die1");
+                isMove = false;
+                
             }
             else
             {
@@ -77,6 +70,4 @@ public class deathPlaform : MonoBehaviour
             }
         }
     }
-
-
 }

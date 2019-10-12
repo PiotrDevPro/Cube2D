@@ -61,10 +61,12 @@ public class Pause : MonoBehaviour
 
     public void RestartLevel()
     {
-        Time.timeScale = 1f;
+       
         paused = false;
         Application.LoadLevel(Application.loadedLevel);
         SaveManager.coins = 0;
+        Time.timeScale = 1f;
+        deathPlaform.isMove = false;
 
     }
 

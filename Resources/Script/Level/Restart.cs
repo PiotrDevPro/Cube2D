@@ -8,24 +8,28 @@ public class Restart : MonoBehaviour
 {
     public GameObject playPanel;
     public GameObject blackScreen;
+    public GameObject add_gold_panel;
     private Text text;
+
     void Start()
     {
         text = GetComponent<Text>();
+
     }
 
-   public void RestartLevel()
+    public void RestartLevel()
     {
 
         Application.LoadLevel(Application.loadedLevel);
-            SaveManager.coins = 0;
-           deathPlaform.isMove = false;
+        SaveManager.coins = 0;
+        Time.timeScale = 1f;
+        deathPlaform.isMove = false;
 
     }
 
     public void Play()
     {
-        
+
         if (SaveManager.star > 100)
         {
             Time.timeScale = 1f;
@@ -34,14 +38,29 @@ public class Restart : MonoBehaviour
             blackScreen.SetActive(false);
             SaveManager.star -= 100;
             SaveManager.UpdateStars();
+            
         }
-        else {
+        else
+        {
 
             Debug.Log("Need More Gold!!!");
+            add_gold_panel.SetActive(true);
+            sound.PlaySound("denied");
             return;
         }
-        
+
     }
 
+    public void addGold()
+    {
+        SaveManager.star += 100;
+        SaveManager.UpdateStars();
+        sound.PlaySound("Buy");
+        add_gold_panel.SetActive(false);
+
+    }
 
 }
+
+
+

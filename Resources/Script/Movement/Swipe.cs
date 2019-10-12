@@ -8,7 +8,7 @@ public class Swipe : MonoBehaviour
     private const float DEADZONE = 12.0f;
     public static Swipe Instance { set; get; }
     private bool tap, swipeLeft, swipeRight, swipeUp, swipeDown;
-    private Vector2  swipeDelta, startTouch;
+    private Vector2 swipeDelta, startTouch;
 
     public bool Tap { get { return tap; } }
     public Vector2 SwipeDelta { get { return swipeDelta; } }
@@ -22,10 +22,10 @@ public class Swipe : MonoBehaviour
         Instance = this;
     }
 
-       private void Start()
-      {
-      player_move = GetComponent<PlayerMovement>();
-     }
+    private void Start()
+    {
+        player_move = GetComponent<PlayerMovement>();
+    }
 
     private void Update()
     {
@@ -38,7 +38,7 @@ public class Swipe : MonoBehaviour
             tap = true;
 
             startTouch = Input.mousePosition;
-          
+
         }
         else if (Input.GetMouseButtonUp(0))
         {
@@ -54,13 +54,13 @@ public class Swipe : MonoBehaviour
         {
             if (Input.touches[0].phase == TouchPhase.Began)
             {
-              //  Debug.Log("Hello");
+                //  Debug.Log("Hello");
                 tap = true;
                 startTouch = Input.touches[0].position;
             }
             else if (Input.touches[0].phase == TouchPhase.Ended || Input.touches[0].phase == TouchPhase.Canceled)
             {
-              //  Debug.Log("Hello");
+                //  Debug.Log("Hello");
                 startTouch = swipeDelta = Vector2.zero;
             }
         }
@@ -95,31 +95,32 @@ public class Swipe : MonoBehaviour
 
                         player_move.movingDir = Direction.LEFT;
                         deathPlaform.isMove = true;
-                         //   swipeLeft = true;
+                        //   swipeLeft = true;
                     }
 
                     else
                         player_move.movingDir = Direction.RIGHT;
-                        deathPlaform.isMove = true;
-                         //   swipeRight = true;
+                    deathPlaform.isMove = true;
+                    //   swipeRight = true;
 
                 }
                 else
                 {
                     // Up or down
-                    if (y < 0) {
+                    if (y < 0)
+                    {
 
-                          player_move.movingDir = Direction.DOWN;
-                          deathPlaform.isMove = true;
+                        player_move.movingDir = Direction.DOWN;
+                        deathPlaform.isMove = true;
                         //   swipeDown = true;
                     }
 
                     else
-                          player_move.movingDir = Direction.UP;
-                          deathPlaform.isMove = true;
-                        //   swipeUp = true;
+                        player_move.movingDir = Direction.UP;
+                    deathPlaform.isMove = true;
+                    //   swipeUp = true;
                 }
-    
+
             }
         }
 
