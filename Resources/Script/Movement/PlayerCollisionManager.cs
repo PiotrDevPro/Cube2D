@@ -7,8 +7,10 @@ using UnityEngine;
 public class PlayerCollisionManager : MonoBehaviour
 {
     public static int a = 4;
+    private static bool trailOnOff = true; 
     PlayerMovement player;
     private TrailRenderer _player_trail;
+    public Text tx_coin;
     public GameObject restarBtn;
     public GameObject blackScreen;
     public GameObject gameOver;
@@ -73,25 +75,23 @@ public class PlayerCollisionManager : MonoBehaviour
 
             if (hit != null)
             {
-                a-=1;
-                Debug.Log(a);
-                if (a != 0)
-
+ 
+                a -=1;
+                if (a > 0 || a != 0)
                 {
                     restarBtn.SetActive(true);
                     sound.PlaySound("die1");
-
                 }
                 else
                 {
-
-                    
                     sound.PlaySound("die1");
                     restarBtn.SetActive(false);
+                    blackScreen.SetActive(false);
                     gameOver.SetActive(true);
+                    Time.timeScale = 1;
                     Destroy(GameObject.Find("Player"));
-                }
-
+                    return;
+                }  
             }
         }
 

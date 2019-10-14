@@ -9,11 +9,13 @@ public class Restart : MonoBehaviour
     public GameObject playPanel;
     public GameObject blackScreen;
     public GameObject add_gold_panel;
+    private TrailRenderer playTrail;
     private Text text;
 
     void Start()
     {
         text = GetComponent<Text>();
+        playTrail =FindObjectOfType<PlayerCollisionManager>().GetComponent<TrailRenderer>();
 
     }
 
@@ -24,6 +26,7 @@ public class Restart : MonoBehaviour
         SaveManager.coins = 0;
         Time.timeScale = 1f;
         deathPlaform.isMove = false;
+        playTrail.enabled = true;
 
     }
 
@@ -38,7 +41,9 @@ public class Restart : MonoBehaviour
             blackScreen.SetActive(false);
             SaveManager.star -= 100;
             SaveManager.UpdateStars();
-            
+            playTrail.enabled = true;
+
+
         }
         else
         {

@@ -6,7 +6,6 @@ using UnityEngine;
 public class deathPlaform : MonoBehaviour
 
 {
-    int b = 0;
     public float speedMoving;
     public static bool isDead = false;
     public static bool isMove = false;
@@ -39,6 +38,7 @@ public class deathPlaform : MonoBehaviour
         
             else
             {
+                //Debug.Log(speedMoving);
                 speedMoving += 0.0011f;
                 transform.Translate(0, speedMoving * Time.deltaTime, 0); 
             }
@@ -52,21 +52,23 @@ public class deathPlaform : MonoBehaviour
     {
         if (col.gameObject.tag == "Player")
         {
-            b += 1;
-            Debug.Log(b);
-            if (b != 4)
+            int a = 4;
+            a -= 1;
+
+            if (a != 0 || a > 0)
 
             {
-                transform.Translate(0, -9, 0);
+                transform.Translate(0, -10, 0);
                 sound.PlaySound("die1");
                 isMove = false;
-                
+                speedMoving -= 0.6f;
+
+
             }
             else
             {
                 transform.Translate(0, 0, 0);
                 sound.PlaySound("die1");
-
             }
         }
     }
