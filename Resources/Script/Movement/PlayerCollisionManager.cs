@@ -37,36 +37,29 @@ public class PlayerCollisionManager : MonoBehaviour
             switch (player.movingDir)
             {
                 case Direction.UP:
-                    Debug.Log(player.movingDir);
-                    deathPlaform.isMove = false;
-                    Time.timeScale = 0;
+                    //Debug.Log(player.movingDir);
                     restarBtn.SetActive(true);
                     blackScreen.SetActive(true);
+                    Time.timeScale = 0;
                     _player_trail.enabled = false;
-                    //    Destroy(GameObject.Find("Player"));
+                    //Destroy(GameObject.Find("Player"));
                     break;
                 case Direction.DOWN:
-                    Debug.Log(player.movingDir);
-                    deathPlaform.isMove = false;
-                    Time.timeScale = 0;
                     restarBtn.SetActive(true);
                     blackScreen.SetActive(true);
+                    Time.timeScale = 0;
                     _player_trail.enabled = false;
                     break;
                 case Direction.RIGHT:
-                    Debug.Log(player.movingDir);
-                    deathPlaform.isMove = false;
-                    Time.timeScale = 0;
                     restarBtn.SetActive(true);
                     blackScreen.SetActive(true);
+                    Time.timeScale = 0;
                     _player_trail.enabled = false;
                     break;
                 case Direction.LEFT:
-                    Debug.Log(player.movingDir);
-                    deathPlaform.isMove = false;
-                    Time.timeScale = 0;
                     restarBtn.SetActive(true);
                     blackScreen.SetActive(true);
+                    Time.timeScale = 0;
                     _player_trail.enabled = false;
                     break;
                   
@@ -81,6 +74,7 @@ public class PlayerCollisionManager : MonoBehaviour
                 {
                     restarBtn.SetActive(true);
                     sound.PlaySound("die1");
+                    deathPlaform.isMove = false;
                 }
                 else
                 {
