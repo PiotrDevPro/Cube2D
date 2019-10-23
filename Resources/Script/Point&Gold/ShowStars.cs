@@ -12,7 +12,6 @@ public class ShowStars : MonoBehaviour
         text = GetComponent<Text>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         text.text = ((int)SaveManager.star).ToString();

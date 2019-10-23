@@ -9,10 +9,8 @@ public class Bullets : MonoBehaviour
     {
         if (col.collider.tag == "Player")
         {
-
             Destroy(this.gameObject);
-
-
+            
         }
 
         else if (col.collider.tag != "Shooter")

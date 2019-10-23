@@ -12,9 +12,8 @@ public class TakePoint : MonoBehaviour
         {
 
             SaveManager.coins += 1;
-            Destroy(gameObject);
             sound.PlaySound("SFX01");
+            Destroy(gameObject);
         }
-
     }
 }

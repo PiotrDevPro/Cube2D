@@ -75,6 +75,7 @@ public class PlayerCollisionManager : MonoBehaviour
                     restarBtn.SetActive(true);
                     sound.PlaySound("die1");
                     deathPlaform.isMove = false;
+                    return;
                 }
                 else
                 {
@@ -84,6 +85,7 @@ public class PlayerCollisionManager : MonoBehaviour
                     gameOver.SetActive(true);
                     Time.timeScale = 1;
                     Destroy(GameObject.Find("Player"));
+                    deathPlaform.isMove = false;
                     return;
                 }  
             }

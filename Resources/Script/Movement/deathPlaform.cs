@@ -20,7 +20,7 @@ public class deathPlaform : MonoBehaviour
         }
         else
         {
-            speedMoving = 3.5f;
+            speedMoving = 3.0f;
         }    
 
     }
@@ -60,9 +60,15 @@ public class deathPlaform : MonoBehaviour
             {
                 transform.Translate(0, -10, 0);
                 sound.PlaySound("die1");
-                isMove = false;
-                speedMoving -= 0.6f;
 
+                if (speedMoving > 6.0f)
+                {
+                    speedMoving -= 1.5f;
+                }
+                else
+                {
+                    speedMoving -= 0.8f;
+                }
 
             }
             else

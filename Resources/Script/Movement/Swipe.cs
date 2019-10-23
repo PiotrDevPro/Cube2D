@@ -95,13 +95,13 @@ public class Swipe : MonoBehaviour
 
                         player_move.movingDir = Direction.LEFT;
                         deathPlaform.isMove = true;
-                        //   swipeLeft = true;
+                        //swipeLeft = true;
                     }
 
                     else
                         player_move.movingDir = Direction.RIGHT;
-                    deathPlaform.isMove = true;
-                    //   swipeRight = true;
+                        deathPlaform.isMove = true;
+                        //swipeRight = true;
 
                 }
                 else
@@ -112,13 +112,13 @@ public class Swipe : MonoBehaviour
 
                         player_move.movingDir = Direction.DOWN;
                         deathPlaform.isMove = true;
-                        //   swipeDown = true;
+                        //swipeDown = true;
                     }
 
                     else
                         player_move.movingDir = Direction.UP;
-                    deathPlaform.isMove = true;
-                    //   swipeUp = true;
+                        deathPlaform.isMove = true;
+                        //swipeUp = true;
                 }
 
             }

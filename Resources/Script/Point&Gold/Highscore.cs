@@ -17,10 +17,7 @@ public class Highscore : MonoBehaviour
                 SaveManager.UpdateScore();
             }
 
-
         }
-
-        
 
     }
 
